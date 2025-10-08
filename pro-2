@@ -1,0 +1,5 @@
+<?php
+$userInput = explode(",", readline("Enter comma-separated values: "));
+sort($userInput);
+print_r($userInput);
+?>
