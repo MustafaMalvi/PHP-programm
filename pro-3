@@ -1,0 +1,27 @@
+<?php
+$months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+$values = ["apple", "banana", "apple", "orange", "banana", "apple"];
+$keys = ["a", "b", "c"];
+$data = ["One", "Two", "Three"];
+
+$assoc = ["One" => 1, "Two" => 2];
+print_r(array_change_key_case($assoc, CASE_UPPER));
+
+print_r(array_chunk($months, 4));
+
+print_r(array_count_values($values));
+
+print_r(array_combine($keys, $data));
+
+array_pop($months);
+print_r($months);
+
+array_push($months, "NewMonth");
+print_r($months);
+
+array_unshift($months, "StartMonth");
+print_r($months);
+
+array_shift($months);
+print_r($months);
+?>
